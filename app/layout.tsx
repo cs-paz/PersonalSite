@@ -1,8 +1,5 @@
 'use client'
 import './globals.css'
-import { CssVarsProvider } from '@mui/joy/styles'
-import CssBaseline from '@mui/joy/CssBaseline'
-import NavBar from './components/NavBar'
 
 export default function RootLayout({
   children,
@@ -10,12 +7,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <CssVarsProvider>
-      {/* must be used under CssVarsProvider */}
-      <CssBaseline />
-      <NavBar/>
-
-      {/* The rest of your application */}
-    </CssVarsProvider>
+    <html lang="en">
+      <body style={{paddingTop: "10px", width: "90%", margin: "auto"}}>
+        {children}
+      </body>
+    </html>
   )
 }

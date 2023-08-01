@@ -4,11 +4,12 @@ import Tab from '@mui/joy/Tab';
 
 function NavBar() {
   return (
-    <Tabs>
+    <Tabs style={{marginBottom: "20px"}}>
         <TabList>
-        <Tab value={1}>Tab A</Tab>
-        <Tab value={2}>Tab B</Tab>
-        <Tab value={3}>Tab C</Tab>
+            <Tab value={1}>Home</Tab>
+            <Tab value={2}>About Me</Tab>
+            <Tab value={3}>Portfolio</Tab>
+            <Tab value={4}>Social Media</Tab>
         </TabList>
     </Tabs>
   )
