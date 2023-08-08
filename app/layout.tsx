@@ -8,8 +8,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{paddingTop: "10px", width: "90%", margin: "auto"}}>
-        {children}
+    
+      <body style={{paddingTop: "10px", width: "90%", margin: "auto",  backgroundColor:"#FFEEDD"}}>
+        <div className="layout">
+          {children}
+        </div>
       </body>
     </html>
   )
