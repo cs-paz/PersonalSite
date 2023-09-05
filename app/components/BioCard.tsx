@@ -7,6 +7,7 @@ import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
 import { CardActions } from '@mui/joy';
+import Link from '@mui/joy/Link';
 import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import SvgIcon from '@mui/joy/SvgIcon';
@@ -18,17 +19,25 @@ export default function BioCard() {
       sx={{
         width: 320,
         boxShadow: 'lg',
-        height: "550px",
+        height: "60vh",
         margin: "auto",
         align: 'left'
       }}
     >
       <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
-        <Avatar src="/static/images/avatar/1.jpg" sx={{ '--Avatar-size': '4rem' }} />
+        <Avatar src="/profile_picture.png" sx={{ '--Avatar-size': '7rem' }} />
         <Typography level="title-lg">Christian Szablewski-Paz</Typography>
-        <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
-          Full Stack Software Engineer
-        </Typography>
+        <div>
+          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
+            Full Stack Software Engineer
+          </Typography>
+          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
+            B.S., Computer Science
+          </Typography>
+          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
+            GPA 3.73
+          </Typography>
+        </div>
         <Box 
           sx={{
             bgcolor: 'background.level1',
@@ -103,6 +112,15 @@ export default function BioCard() {
             </tbody>
           </Table>
         </Box>
+        <Typography level="title-md" sx={{ maxWidth: '24ch', marginTop:"10px" }}>
+          Follow me on 
+          <Link 
+            href="https://www.linkedin.com/in/christian-szablewski-paz-0b1b3b1b3/"
+            variant="plain"
+          >
+            Github!
+          </Link>
+        </Typography>
         <Box
           sx={{
             display: 'flex',

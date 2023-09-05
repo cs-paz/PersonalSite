@@ -10,7 +10,7 @@ function HomeContent() {
             spacing={2} 
             style={{
                 color:"black", 
-                height:"80vh", 
+                height:"70vh", 
                 backgroundColor:"#FFD8BE", 
                 padding: "13px 0px 0px 20px",
                 borderRadius: "15px"
