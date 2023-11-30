@@ -17,45 +17,34 @@ export default function BioCard() {
   return (
     <Card
       sx={{
-        width: 320,
+        width: "90%",
+        maxWidth: "400px",
         boxShadow: 'lg',
-        height: "60vh",
+        height: "auto",
         margin: "auto",
-        align: 'left'
+        align: 'left',
+        flexWrap: 'wrap',
       }}
     >
       <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
         <Avatar src="/profile_picture.png" sx={{ '--Avatar-size': '7rem' }} />
         <Typography level="title-lg">Christian Szablewski-Paz</Typography>
-        <div>
-          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
+        <div style={{maxWidth: '24ch'}}>
+          <Typography level="body-sm">
             Full Stack Software Engineer
           </Typography>
-          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
+          <Typography level="body-sm">
             B.S., Computer Science
           </Typography>
-          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
+          <Typography level="body-sm">
             GPA 3.73
           </Typography>
         </div>
-        <Box 
-          sx={{
-            bgcolor: 'background.level1',
-            maxWidth: '100%',
-            minWidth: "80%",
-            marginTop: "10px",
-            padding: "8px",
-            borderRadius: '15px'
-         }}>
-          <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
-            Interested in building web applications and learning new technologies.
-          </Typography>
-        </Box>
         <Box
           sx={{
             maxWidth: '100%',
             minWidth: "80%",
-            marginTop: "10px",
+            marginTop: "5px",
             padding: "8px",
             borderRadius: '15px'
          }}>
@@ -112,7 +101,7 @@ export default function BioCard() {
             </tbody>
           </Table>
         </Box>
-        <Typography level="title-md" sx={{ maxWidth: '24ch', marginTop:"10px" }}>
+        <Typography level="title-md" sx={{ maxWidth: '24ch', marginTop:"5px" }}>
           Follow me on 
           <Link 
             href="https://www.linkedin.com/in/christian-szablewski-paz-0b1b3b1b3/"
@@ -198,7 +187,7 @@ export default function BioCard() {
       <CardOverflow sx={{ bgcolor: 'background.level1' }}>
         <CardActions buttonFlex="1">
           <ButtonGroup variant="outlined" sx={{ bgcolor: 'background.surface' }}>
-            <Button>Message</Button>
+            <Button><a href="mailto:cszablewskipaz@gmail.com"><span>Email</span></a></Button>
             <Button>Connect</Button>
           </ButtonGroup>
         </CardActions>

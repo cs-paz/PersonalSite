@@ -10,10 +10,14 @@ function HomeContent() {
             spacing={2} 
             style={{
                 color:"black", 
-                height:"70vh", 
+                height:"80vh", 
+                minHeight:"600px",
+                minWidth:"1120px",
+                maxWidth:"1800px",
                 backgroundColor:"#FFD8BE", 
                 padding: "13px 0px 0px 20px",
-                borderRadius: "15px"
+                borderRadius: "15px",
+                margin: "auto",
             }}>
             <Grid xs={8}>
                 <Item>
@@ -21,7 +25,7 @@ function HomeContent() {
                         component="img"
                         sx={{
                             zIndex: -1,
-                            height: "60vh",
+                            height: "560px",
                             width: "100%",
                             objectFit: 'cover',
                             backgroundImage: 'url(/maine.png)',
