@@ -4,16 +4,15 @@ import CssBaseline from '@mui/joy/CssBaseline'
 import NavBar from './NavBar'
 import HomeContent from './HomeContent'
 
-export default function Layout() {
+function Layout() {
   return (
       <CssVarsProvider>
         {/* must be used under CssVarsProvider */}
         <CssBaseline/>
-        <Box>
-          <NavBar/>
-        </Box>
-          <HomeContent></HomeContent>
+          <HomeContent/>
         {/* The rest of your application */}
       </CssVarsProvider>
   )
 }
+
+export default Layout

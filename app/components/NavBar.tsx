@@ -2,9 +2,11 @@ import Tabs from '@mui/joy/Tabs';
 import TabList from '@mui/joy/TabList';
 import Tab from '@mui/joy/Tab';
 
+const tab_style = {marginBottom: "20px", backgroundColor: "#FFD8BE"}
+
 function NavBar() {
   return (
-    <Tabs style={{marginBottom: "20px"}}>
+    <Tabs style={tab_style}>
         <TabList>
             <Tab value={1}>Home</Tab>
             <Tab value={2}>About Me</Tab>
