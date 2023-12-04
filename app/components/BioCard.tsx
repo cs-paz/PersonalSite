@@ -16,8 +16,8 @@ import Table from '@mui/joy/Table';
 const card_style = {
     width: "90%",
     maxWidth: "400px",
-    height: "auto",
-    margin: "auto",
+    margin: "0px 20px 0px 20px",
+    height: "450px",
     align: 'left',
     flexWrap: 'wrap',
     backgroundColor: "#FFD8BE",
@@ -52,10 +52,10 @@ const skills_table_container_style = {
   borderRadius: '15px'
 }
 
-const Header = (
+const Header = () => (
   <>
     <Typography level="title-lg" style={title_style}>Christian Szablewski-Paz</Typography>
-    <div>
+    {/* <div>
       <Typography level="body-sm" style={subtitle_style} >
         Full Stack Software Engineer
       </Typography>
@@ -65,11 +65,11 @@ const Header = (
       <Typography level="body-sm" style={subtitle_style}>
         GPA 3.73
       </Typography>
-    </div>
+    </div> */}
   </>
 )
 
-const SkillsTable = (
+const SkillsTable = () =>(
   <Box sx={skills_table_container_style}>
     <Table style={border_color}>
       <tbody>
@@ -126,7 +126,7 @@ const SkillsTable = (
   </Box>
 )
 
-const FollowMeOnGithub = (
+const FollowMeOnGithub = () => (
   <Typography level="title-md" sx={{ maxWidth: '24ch', marginTop:"5px" }}>
     Follow me on 
     <Link 
@@ -138,7 +138,7 @@ const FollowMeOnGithub = (
   </Typography>
 )
 
-const SocialMediaIcons = (
+const SocialMediaIcons = () => (
   <Box
     sx={{
       display: 'flex',
@@ -222,19 +222,11 @@ export default function BioCard() {
     >
       <CardContent sx={card_content_style}>
         <Avatar src="/profile_picture.png" sx={avatar_style} />
-        {Header}
-        {SkillsTable}
-        {FollowMeOnGithub}
-        {SocialMediaIcons}
+        <Header/>
+        <SkillsTable/>
+        <FollowMeOnGithub/>
+        <SocialMediaIcons/>
       </CardContent>
-      <CardOverflow sx={{ bgcolor: 'background.level1' }}>
-        <CardActions buttonFlex="1">
-          <ButtonGroup variant="outlined" sx={{ bgcolor: 'background.surface' }}>
-            <Button><a href="mailto:cszablewskipaz@gmail.com"><span>Email</span></a></Button>
-            <Button>Connect</Button>
-          </ButtonGroup>
-        </CardActions>
-      </CardOverflow>
     </Card>
   );
 }
