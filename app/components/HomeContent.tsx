@@ -6,26 +6,33 @@ import Box from '@mui/joy/Box';
 import NavBar from './NavBar';
 
 const main_container_style = {
-    paddingTop: "10px", 
-    width: "100%", 
-    margin: "auto",  
+    paddingTop: "10px",
+    width: "100%",
+    margin: "auto",
 }
 
 const grid_style = {
-    height:"90vh", 
+    height:"90vh",
     minHeight:"600px",
-    minWidth:"1120px",
-    maxWidth:"1500px",
+    width: "1250px",
     maxHeight: "800px",
-    padding: "13px 20px 0px 20px",
+    padding: "0px 20px 0px 20px",
     borderRadius: "15px",
     margin: "auto",
     color: "#332f2c",
 }
 
+const navbar_container_style = {
+    height: "30px",
+    width: "1320px",
+    padding: "0px 0px 0px 30px",
+    margin: "45px auto 0px auto",
+    color: "#332f2c",
+}
+
 const box_style = {
     padding: "0px 20px 0px 20px",
-    width: "100%",
+    width: "730px",
     objectFit: 'cover',
     borderRadius: "15px",
     backgroundPosition: '60% 50%',
@@ -56,12 +63,8 @@ const main_text_style = {
     padding: "0px 0px 10px 0px",
 }
 
-const fill_height = {
-    height: "100%"
-}
-
-const fill_width = {
-    width: "100%",
+const bio_card_container_style = {
+    margin: "auto",
 }
 
 const MainText = () => (
@@ -81,12 +84,12 @@ const MainText = () => (
 )
 
 
-function HomeContent() {
+const HomeContent = () => {
     return (
         <Box style={main_container_style}>
-            <Box style={fill_width}><NavBar/></Box>
-            <Grid 
-                container 
+            <Grid style={navbar_container_style}><Box style={navbar_container_style}><NavBar/></Box></Grid>
+            <Grid
+                container
                 spacing={2}
                 style={grid_style}
             >
@@ -96,8 +99,8 @@ function HomeContent() {
                     </Item>
                 </Grid>
                 <Grid xs={5}>
-                    <Item sx={{marginLeft: "auto", marginRight: "0",}}>
-                        <BioCard />
+                    <Item sx={bio_card_container_style}>
+                        <BioCard/>
                     </Item>
                 </Grid>
             </Grid>

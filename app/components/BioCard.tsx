@@ -1,12 +1,8 @@
 import * as React from 'react';
 import Avatar from '@mui/joy/Avatar';
 import Box from '@mui/joy/Box';
-import Button from '@mui/joy/Button';
-import ButtonGroup from '@mui/joy/ButtonGroup';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import CardOverflow from '@mui/joy/CardOverflow';
-import { CardActions } from '@mui/joy';
 import Link from '@mui/joy/Link';
 import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
@@ -16,12 +12,12 @@ import Table from '@mui/joy/Table';
 const card_style = {
     width: "90%",
     maxWidth: "400px",
-    margin: "0px 20px 0px 20px",
     height: "450px",
     align: 'left',
     flexWrap: 'wrap',
     backgroundColor: "#FFD8BE",
     boxShadow: "0px 5px 30px 0px rgba(0,0,0,0.75)",
+    margin: "auto"
 }
 
 const card_content_style = {
@@ -38,7 +34,8 @@ const subtitle_style = {
 }
 
 const avatar_style = { 
-  '--Avatar-size': '7rem' 
+  '--Avatar-size': '18rem',
+  margin: "auto 10px",
 }
 
 const border_color = {
@@ -51,23 +48,6 @@ const skills_table_container_style = {
   padding: "8px",
   borderRadius: '15px'
 }
-
-const Header = () => (
-  <>
-    <Typography level="title-lg" style={title_style}>Christian Szablewski-Paz</Typography>
-    {/* <div>
-      <Typography level="body-sm" style={subtitle_style} >
-        Full Stack Software Engineer
-      </Typography>
-      <Typography level="body-sm" style={subtitle_style}>
-        B.S., Computer Science
-      </Typography>
-      <Typography level="body-sm" style={subtitle_style}>
-        GPA 3.73
-      </Typography>
-    </div> */}
-  </>
-)
 
 const SkillsTable = () =>(
   <Box sx={skills_table_container_style}>
@@ -127,7 +107,7 @@ const SkillsTable = () =>(
 )
 
 const FollowMeOnGithub = () => (
-  <Typography level="title-md" sx={{ maxWidth: '24ch', marginTop:"5px" }}>
+  <Typography level="title-md">
     Follow me on 
     <Link 
       href="https://www.linkedin.com/in/christian-szablewski-paz-0b1b3b1b3/"
@@ -143,7 +123,7 @@ const SocialMediaIcons = () => (
     sx={{
       display: 'flex',
       gap: 2,
-      mt: 2,
+      mt: 1,
       '& > button': { borderRadius: '2rem' },
     }}
   >
@@ -215,18 +195,20 @@ const SocialMediaIcons = () => (
 )
 
 
-export default function BioCard() {
+const BioCard = () => {
   return (
     <Card
       sx={card_style}
     >
       <CardContent sx={card_content_style}>
         <Avatar src="/profile_picture.png" sx={avatar_style} />
-        <Header/>
-        <SkillsTable/>
+        <Typography level="title-lg" style={title_style}>Christian Szablewski-Paz</Typography>
+        {/* <SkillsTable/> */}
         <FollowMeOnGithub/>
         <SocialMediaIcons/>
       </CardContent>
     </Card>
   );
 }
+
+export default BioCard

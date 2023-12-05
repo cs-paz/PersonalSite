@@ -1,10 +1,8 @@
 import { CssVarsProvider, extendTheme } from '@mui/joy/styles'
-import Box from '@mui/joy/Box';
 import CssBaseline from '@mui/joy/CssBaseline'
-import NavBar from './NavBar'
 import HomeContent from './HomeContent'
 
-function Layout() {
+const Layout = () => {
   return (
       <CssVarsProvider>
         {/* must be used under CssVarsProvider */}
