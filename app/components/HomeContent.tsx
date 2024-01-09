@@ -4,6 +4,7 @@ import Typography from '@mui/joy/Typography';
 import BioCard from './BioCard'
 import Box from '@mui/joy/Box';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const main_container_style = {
     paddingTop: "10px",
@@ -74,7 +75,6 @@ const under_grid_style = {
     borderRadius: "15px",
     margin: "auto",
     color: "#332f2c",
-    backgroundColor: "black",
 }
 
 const italicized_style = {
@@ -92,7 +92,9 @@ const MainText = () => (
             </Typography>
             <Typography sx={main_text_style}>
                 I am experienced in building web and mobile enterprise systems from front to back.  Solving real problems using technology is my passion, and building web apps is fun! 
-                <Box><span style={italicized_style}>And hey! Why not make them look good too?</span></Box>
+            </Typography>
+            <Typography sx={main_text_style}>
+                <span style={italicized_style}>And hey! Why not make them look good too?</span>
             </Typography>
         </Box>
     </Box>
@@ -123,24 +125,20 @@ const UnderGrid = () => (
         spacing={2}
         style={under_grid_style}
     >
-        <Grid xs={7}>
-            <Item>
-            </Item>
+        <Grid xs={8}>
         </Grid>
-        <Grid xs={5}>
-            <Item>
-            </Item>
+        <Grid xs={4}>
+            <Footer/>
         </Grid>
     </Grid>
 )
-
 
 const HomeContent = () => {
     return (
         <Box style={main_container_style}>
             <Grid style={navbar_container_style}><Box style={navbar_container_style}><NavBar/></Box></Grid>
             <MainGrid/>
-            <UnderGrid/>
+            <UnderGrid></UnderGrid>
         </Box>
     )
 }

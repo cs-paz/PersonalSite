@@ -202,7 +202,6 @@ const BioCard = () => {
     >
       <CardContent sx={card_content_style}>
         <Avatar src="/profile_picture.png" sx={avatar_style} />
-        <Typography level="title-lg" style={title_style}>Christian Szablewski-Paz</Typography>
         {/* <SkillsTable/> */}
         <FollowMeOnGithub/>
         <SocialMediaIcons/>
