@@ -13,12 +13,13 @@ const main_container_style = {
 }
 
 const grid_style = {
-    height:"480px",
+    height:"600px",
     width: "1250px",
     maxHeight: "800px",
     padding: "0px 20px 0px 20px",
     borderRadius: "15px",
     margin: "auto",
+    marginTop: "5px",
     color: "#332f2c",
 }
 
@@ -37,7 +38,7 @@ const box_style = {
     borderRadius: "15px",
     backgroundPosition: '60% 50%',
     boxShadow: "0px 5px 30px 0px rgba(0,0,0,0.75)",
-    height: "450px",
+    height: "600px",
     margin: "auto"
 }
 
@@ -48,17 +49,17 @@ const text_container_style = {
 }
 
 const title_style = {
-    fontSize: "5.0rem",
-    fontWeight: "200",
+    fontSize: "6.0rem",
+    fontWeight: "100",
     color: "#332f2c",
     borderBottom: "0.5px solid #332f2c",
     lineHeight: "1.2",
-    padding: "15px 0px 0px 0px",
-    marginBottom: "10px"
+    padding: "15px 0px 10px 0px",
+    marginBottom: "20px",
 }
 
 const main_text_style = {
-    fontSize: "1.73rem",
+    fontSize: "2.0rem",
     fontWeight: "200",
     color: "#332f2c",
     padding: "0px 0px 10px 0px",
@@ -66,15 +67,7 @@ const main_text_style = {
 
 const bio_card_container_style = {
     margin: "auto",
-}
-
-const under_grid_style = {
-    height:"150px",
-    width: "1250px",
-    padding: "0px 20px 0px 20px",
-    borderRadius: "15px",
-    margin: "auto",
-    color: "#332f2c",
+    height: 480,
 }
 
 const italicized_style = {
@@ -85,10 +78,10 @@ const MainText = () => (
     <Box sx={box_style}>
         <Box sx={text_container_style}>
             <Typography sx={title_style}>
-                Hey There!
+                Hey There! ☺
             </Typography>
             <Typography sx={main_text_style}>
-                My name is Christian. I am a full stack software engineer based out of the New York City area, and I am always looking for new opportunities to learn and grow as a developer.
+                My name is Christian. I am a full stack software engineer based out of the New York City area. Welcome to my portfolio site! 
             </Typography>
             <Typography sx={main_text_style}>
                 I am experienced in building web and mobile enterprise systems from front to back.  Solving real problems using technology is my passion, and building web apps is fun! 
@@ -114,31 +107,18 @@ const MainGrid = () => (
         <Grid xs={4}>
             <Item sx={bio_card_container_style}>
                 <BioCard/>
+                <Footer/>
             </Item>
         </Grid>
     </Grid>
 )
 
-const UnderGrid = () => (
-    <Grid
-        container
-        spacing={2}
-        style={under_grid_style}
-    >
-        <Grid xs={8}>
-        </Grid>
-        <Grid xs={4}>
-            <Footer/>
-        </Grid>
-    </Grid>
-)
 
 const HomeContent = () => {
     return (
         <Box style={main_container_style}>
             <Grid style={navbar_container_style}><Box style={navbar_container_style}><NavBar/></Box></Grid>
             <MainGrid/>
-            <UnderGrid></UnderGrid>
         </Box>
     )
 }

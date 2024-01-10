@@ -1,11 +1,11 @@
 'use client'
 import './globals.css'
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode
-}) {
+}) => {
   return (
     <html lang="en">
       <body style={{paddingTop: "10px", width: "90%", margin: "auto",  backgroundColor:"#FFD8BE"}}>
@@ -16,3 +16,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+export default RootLayout

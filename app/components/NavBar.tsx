@@ -15,7 +15,7 @@ const grid_style = {
 
 const text_style = {
   fontWeight: "300",
-  fontSize: "1.1rem",
+  fontSize: "1.3rem",
   color: "#332f2c",
 }
 

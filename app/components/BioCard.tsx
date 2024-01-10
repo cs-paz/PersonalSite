@@ -25,86 +25,10 @@ const card_content_style = {
     textAlign: 'center',
 }
 
-const title_style = {
-  color: "#332f2c"
-}
-
-const subtitle_style = {
-  color: "#665f58"
-}
-
 const avatar_style = { 
   '--Avatar-size': '18rem',
   margin: "auto 10px",
 }
-
-const border_color = {
-  borderColor: "#b29785"
-}
-
-const skills_table_container_style = {
-  width: "280px",
-  marginTop: "5px",
-  padding: "8px",
-  borderRadius: '15px'
-}
-
-const SkillsTable = () =>(
-  <Box sx={skills_table_container_style}>
-    <Table style={border_color}>
-      <tbody>
-        <tr>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              Typescript
-            </Typography>
-          </td>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              React
-            </Typography>
-          </td>
-        </tr>
-        <tr>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              Python
-            </Typography>
-          </td>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              Django
-            </Typography>
-          </td>
-        </tr>
-        <tr>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              SQL/NoSQL
-            </Typography>
-          </td>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              ExpressJs
-            </Typography>
-          </td>
-        </tr>
-        <tr>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              AWS
-            </Typography>
-          </td>
-          <td style={border_color}>
-            <Typography level="body-sm" sx={title_style}>
-              Material UI
-            </Typography>
-          </td>
-        </tr>
-      </tbody>
-    </Table>
-  </Box>
-)
 
 const FollowMeOnGithub = () => (
   <Typography level="title-md">
