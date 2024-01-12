@@ -34,7 +34,7 @@ const FollowMeOnGithub = () => (
   <Typography level="title-md">
     Follow me on 
     <Link 
-      href="https://www.linkedin.com/in/christian-szablewski-paz-0b1b3b1b3/"
+      href="https://www.github.com/cs-paz"
       variant="plain"
     >
       Github!

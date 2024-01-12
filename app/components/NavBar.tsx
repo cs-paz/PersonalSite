@@ -17,6 +17,15 @@ const text_style = {
   fontWeight: "300",
   fontSize: "1.3rem",
   color: "#332f2c",
+  "&:hover": {
+    fontWeight: "400" 
+  },
+}
+
+const link_style = {
+  textDecorationLine: "none",
+  color: "inherit",
+  
 }
 
 
@@ -28,10 +37,10 @@ const NavBar = () => {
     >
       <Grid xs={7}>
         <Item>
-            <Breadcrumbs sx={breadcrumbs_style} separator="|">
-              <Typography level="body-sm" sx={text_style}>Resume</Typography>
-              <Typography level="body-sm" sx={text_style}>Contact</Typography>
-              <Typography level="body-sm" sx={text_style}>LinkedIn</Typography>
+            <Breadcrumbs sx={breadcrumbs_style} separator="|">link_style
+              <Typography level="body-sm" sx={text_style}><a href="./Christian_Szablewski_Paz_Resume.pdf" download="Christian_Szablewski_Paz_Resume.pdf" style={link_style}>Resume</a></Typography>
+              <Typography level="body-sm" sx={text_style}><a href="mailto:contact.christian.paz@gmail.com" style={link_style}>Email</a></Typography>
+              <Typography level="body-sm" sx={text_style}><a href="https://www.linkedin.com/in/christian-szablewski-paz-54600b16a" style={link_style}>LinkedIn</a></Typography>
             </Breadcrumbs>
         </Item>
       </Grid>
