@@ -1,7 +1,5 @@
 import * as React from 'react';
-import Grid from '@mui/joy/Grid';
 import Box from '@mui/joy/Box';
-import Item from '@mui/joy/Grid';
 import Typography from '@mui/joy/Typography';
 
 const container_style = {

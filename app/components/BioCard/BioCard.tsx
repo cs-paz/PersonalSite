@@ -1,13 +1,9 @@
 import * as React from 'react';
 import Avatar from '@mui/joy/Avatar';
-import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import Link from '@mui/joy/Link';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import SvgIcon from '@mui/joy/SvgIcon';
-import Table from '@mui/joy/Table';
 
 const card_style = {
     width: "90%",

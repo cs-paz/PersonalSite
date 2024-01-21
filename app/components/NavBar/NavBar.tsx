@@ -25,7 +25,6 @@ const text_style = {
 const link_style = {
   textDecorationLine: "none",
   color: "inherit",
-  
 }
 
 

@@ -1,10 +1,10 @@
 import Grid from '@mui/joy/Grid';
 import Item from '@mui/joy/Grid';
 import Typography from '@mui/joy/Typography';
-import BioCard from './BioCard'
+import BioCard from '../BioCard/BioCard'
 import Box from '@mui/joy/Box';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 
 const main_container_style = {
     paddingTop: "10px",

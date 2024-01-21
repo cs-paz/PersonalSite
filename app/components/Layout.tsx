@@ -1,6 +1,6 @@
 import { CssVarsProvider, extendTheme } from '@mui/joy/styles'
 import CssBaseline from '@mui/joy/CssBaseline'
-import HomeContent from './HomeContent'
+import HomeContent from './HomeContent/HomeContent'
 
 const Layout = () => {
   return (
