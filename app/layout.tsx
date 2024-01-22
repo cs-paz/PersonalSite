@@ -1,3 +1,4 @@
+import './Globals.d.ts'
 import './globals.css'
 
 const RootLayout = ({

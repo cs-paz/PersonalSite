@@ -5,6 +5,8 @@
     flex-wrap: 'wrap';
     background-color: #FFD8BE;
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 16px;
     margin: auto
 }
 

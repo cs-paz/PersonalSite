@@ -2,7 +2,7 @@ import { CssVarsProvider, extendTheme } from '@mui/joy/styles'
 import CssBaseline from '@mui/joy/CssBaseline'
 import HomeContent from './HomeContent/HomeContent'
 
-const Layout = () => {
+const Main = () => {
   return (
       <CssVarsProvider>
         {/* must be used under CssVarsProvider */}
@@ -13,4 +13,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default Main
